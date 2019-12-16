@@ -1,0 +1,243 @@
+# Module: nginx
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-nginx.html
+
+- module: nginx
+  # Access logs
+  access:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  # Error logs
+  error:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+    
+# Module: elasticsearch
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-elasticsearch.html
+
+- module: elasticsearch
+  # Server log
+  server:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  gc:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  audit:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  slowlog:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  deprecation:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: iis
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-iis.html
+
+- module: iis
+  # Access logs
+  access:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  # Error logs
+  error:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: kafka
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-kafka.html
+
+- module: kafka
+  # All logs
+  log:
+    enabled: true
+
+    # Set custom paths for Kafka. If left empty,
+    # Filebeat will look under /opt.
+    #var.kafka_home:
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+    # Convert the timestamp to UTC. Requires Elasticsearch >= 6.1.
+    #var.convert_timezone: false
+# Module: logstash
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-logstash.html
+
+- module: logstash
+  # logs
+  log:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  # Slow logs
+  slowlog:
+   enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: mongodb
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-mongodb.html
+
+- module: mongodb
+  # All logs
+  log:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: mysql
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-mysql.html
+
+- module: mysql
+  # Error logs
+  error:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  # Slow logs
+  slowlog:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: osquery
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-osquery.html
+
+- module: osquery
+  result:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+    # If true, all fields created by this module are prefixed with
+    # `osquery.result`. Set to false to copy the fields in the root
+    # of the document. The default is true.
+    #var.use_namespace: true
+# Module: postgresql
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-postgresql.html
+
+- module: postgresql
+  # All logs
+  log:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: redis
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-redis.html
+
+- module: redis
+  # Main logs
+  log:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths: ["/var/log/redis/redis-server.log*"]
+
+  # Slow logs, retrieved via the Redis API (SLOWLOG)
+  slowlog:
+    enabled: true
+
+    # The Redis hosts to connect to.
+    #var.hosts: ["localhost:6379"]
+
+    # Optional, the password to use when connecting to Redis.
+    #var.password:
+# Module: system
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-system.html
+
+- module: system
+  # Syslog
+  syslog:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+    # Convert the timestamp to UTC. Requires Elasticsearch >= 6.1.
+    #var.convert_timezone: false
+
+  # Authorization logs
+  auth:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+    # Convert the timestamp to UTC. Requires Elasticsearch >= 6.1.
+    #var.convert_timezone: false
+# Module: traefik
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-traefik.html
+
+- module: traefik
+  # Access logs
+  access:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+# Module: apache2
+# Docs: https://www.elastic.co/guide/en/beats/filebeat/master/filebeat-module-apache2.html
+
+- module: apache2
+  # Access logs
+  access:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  # Error logs
+  error:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:

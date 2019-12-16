@@ -1,0 +1,584 @@
+# Module: apache
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-apache.html
+
+- module: apache
+  #metricsets:
+  #  - status
+  period: 10s
+  hosts: ["http://127.0.0.1"]
+  #username: "user"
+  #password: "secret"
+# Module: ceph
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-ceph.html
+
+- module: ceph
+  #metricsets:
+  #  - cluster_health
+  #  - cluster_status
+  #  - monitor_health
+  period: 10s
+  hosts: ["localhost:5000"]
+  #username: "user"
+  #password: "secret"
+
+- module: ceph
+  #metricsets:
+  #  - cluster_disk
+  #  - osd_tree
+  #  - osd_df
+  #  - pool_disk
+  period: 1m
+  hosts: ["localhost:5000"]
+# Module: couchbase
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-couchbase.html
+
+- module: couchbase
+  #metricsets:
+  #  - bucket
+  #  - cluster
+  #  - node
+  period: 10s
+  hosts: ["localhost:8091"]
+  #username: "user"
+  #password: "secret"
+# Module: docker
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-docker.html
+
+- module: docker
+  #metricsets:
+  #  - container
+  #  - cpu
+  #  - diskio
+  #  - healthcheck
+  #  - info
+  #  - memory
+  #  - network
+  period: 10s
+  hosts: ["unix:///var/run/docker.sock"]
+
+  # If set to true, replace dots in labels with `_`.
+  #labels.dedot: false
+
+  # To connect to Docker over TLS you must specify a client and CA certificate.
+  #ssl:
+    #certificate_authority: "/etc/pki/root/ca.pem"
+    #certificate:           "/etc/pki/client/cert.pem"
+    #key:                   "/etc/pki/client/cert.key"
+# Module: dropwizard
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-dropwizard.html
+
+- module: dropwizard
+  #metricsets:
+  #  - collector
+  period: 10s
+  hosts: ["localhost:8080"]
+  metrics_path: /metrics/metrics
+  namespace: example
+  #username: "user"
+  #password: "secret"
+# Module: elasticsearch
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-elasticsearch.html
+
+- module: elasticsearch
+  #metricsets:
+  #  - node
+  #  - node_stats
+  period: 10s
+  hosts: ["http://localhost:9200"]
+  #username: "user"
+  #password: "secret"
+# Module: envoyproxy
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-envoyproxy.html
+
+- module: envoyproxy
+  #metricsets:
+  #  - server
+  period: 10s
+  hosts: ["localhost:9901"]
+# Module: etcd
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-etcd.html
+
+- module: etcd
+  #metricsets:
+  #  - leader
+  #  - self
+  #  - store
+  period: 10s
+  hosts: ["localhost:2379"]
+  #username: "user"
+  #password: "secret"
+# Module: golang
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-golang.html
+
+- module: golang
+  #metricsets:
+  #  - expvar
+  #  - heap
+  period: 10s
+  hosts: ["localhost:6060"]
+  heap.path: "/debug/vars"
+  expvar:
+    namespace: "example"
+    path: "/debug/vars"
+# Module: graphite
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-graphite.html
+
+- module: graphite
+  #metricsets:
+  #  - server
+  #protocol: "udp"
+  #templates:
+  #  - filter: "test.*.bash.*" # This would match metrics like test.localhost.bash.stats
+  #    namespace: "test"
+  #    template: ".host.shell.metric*" # test.localhost.bash.stats would become metric=stats and tags host=localhost,shell=bash
+  #    delimiter: "_"
+# Module: haproxy
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-haproxy.html
+
+- module: haproxy
+  #metricsets:
+  #  - info
+  #  - stat
+  period: 10s
+  hosts: ["tcp://127.0.0.1:14567"]
+# Module: http
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-http.html
+
+- module: http
+  #metricsets:
+  #  - json
+  period: 10s
+  hosts: ["localhost:80"]
+  namespace: "json_namespace"
+  path: "/"
+  #body: ""
+  #method: "GET"
+  #username: "user"
+  #password: "secret"
+  #request.enabled: false
+  #response.enabled: false
+  #json.is_array: false
+  #dedot.enabled: false
+
+- module: http
+  #metricsets:
+  #  - server
+  host: "localhost"
+  port: "8080"
+  enabled: false
+  #paths:
+  #  - path: "/foo"
+  #    namespace: "foo"
+  #    fields: # added to the the response in root. overwrites existing fields
+  #      key: "value"
+# Module: jolokia
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-jolokia.html
+
+- module: jolokia
+  #metricsets: ["jmx"]
+  period: 10s
+  hosts: ["localhost"]
+  namespace: "metrics"
+  #path: "/jolokia/?ignoreErrors=true&canonicalNaming=false"
+  #username: "user"
+  #password: "secret"
+  jmx.mappings:
+    #- mbean: 'java.lang:type=Runtime'
+    #  attributes:
+    #    - attr: Uptime
+    #      field: uptime
+    #- mbean: 'java.lang:type=Memory'
+    #  attributes:
+    #    - attr: HeapMemoryUsage
+    #      field: memory.heap_usage
+    #    - attr: NonHeapMemoryUsage
+    #      field: memory.non_heap_usage
+    # GC Metrics - this depends on what is available on your JVM
+    #- mbean: 'java.lang:type=GarbageCollector,name=ConcurrentMarkSweep'
+    #  attributes:
+    #    - attr: CollectionTime
+    #      field: gc.cms_collection_time
+    #    - attr: CollectionCount
+    #      field: gc.cms_collection_count
+
+  jmx.application:
+  jmx.instance:
+# Module: kafka
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-kafka.html
+
+- module: kafka
+  #metricsets:
+  #  - partition
+  #  - consumergroup
+  period: 10s
+  hosts: ["localhost:9092"]
+
+  #client_id: metricbeat
+  #retries: 3
+  #backoff: 250ms
+
+  # List of Topics to query metadata for. If empty, all topics will be queried.
+  #topics: []
+
+  # Optional SSL. By default is off.
+  # List of root certificates for HTTPS server verifications
+  #ssl.certificate_authorities: ["/etc/pki/root/ca.pem"]
+
+  # Certificate for SSL client authentication
+  #ssl.certificate: "/etc/pki/client/cert.pem"
+
+  # Client Certificate Key
+  #ssl.key: "/etc/pki/client/cert.key"
+
+  # SASL authentication
+  #username: ""
+  #password: ""
+# Module: kibana
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-kibana.html
+
+- module: kibana
+  #metricsets:
+  #  - status
+  period: 10s
+  hosts: ["localhost:5601"]
+  #basepath: ""
+  #username: "user"
+  #password: "secret"
+# Module: kubernetes
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-kubernetes.html
+
+# Node metrics, from kubelet:
+- module: kubernetes
+  #metricsets:
+  #  - node
+  #  - system
+  #  - pod
+  #  - container
+  #  - volume
+  period: 10s
+  hosts: ["localhost:10255"]
+  bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+  ssl.certificate_authorities:
+    - /var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt
+  #username: "user"
+  #password: "secret"
+
+  # Enriching parameters:
+  #add_metadata: true
+  #in_cluster: true
+  # When used outside the cluster:
+  #in_cluster: false
+  #host: node_name
+  #kube_config: ~/.kube/config
+
+# State metrics from kube-state-metrics service:
+#- module: kubernetes
+#  metricsets:
+#    - state_node
+#    - state_deployment
+#    - state_replicaset
+#    - state_statefulset
+#    - state_pod
+#    - state_container
+#  period: 10s
+#  hosts: ["kube-state-metrics:8080"]
+#  add_metadata: true
+#  in_cluster: true
+
+# Kubernetes events
+#- module: kubernetes
+#  metricsets:
+#    - event
+# Module: kvm
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-kvm.html
+
+- module: kvm
+  #metricsets:
+  #  - dommemstat
+  period: 10s
+  hosts: ["unix:///var/run/libvirt/libvirt-sock"]
+# Module: logstash
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-logstash.html
+
+- module: logstash
+  #metricsets:
+  #  - node
+  #  - node_stats
+  period: 10s
+  hosts: ["localhost:9600"]
+  #username: "user"
+  #password: "secret"
+# Module: memcached
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-memcached.html
+
+- module: memcached
+#  metricsets: ["stats"]
+  period: 10s
+  hosts: ["localhost:11211"]
+# Module: mongodb
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-mongodb.html
+
+- module: mongodb
+  #metricsets:
+  #  - dbstats
+  #  - status
+  #  - collstats
+  #  - metrics
+  #  - replstatus
+  period: 10s
+
+  # The hosts must be passed as MongoDB URLs in the format:
+  # [mongodb://][user:pass@]host[:port].
+  # The username and password can also be set using the respective configuration
+  # options. The credentials in the URL take precedence over the username and
+  # password configuration options.
+  hosts: ["localhost:27017"]
+
+  # Optional SSL. By default is off.
+  #ssl.enabled: true
+
+  # Mode of verification of server certificate ('none' or 'full')
+  #ssl.verification_mode: 'full'
+
+  # List of root certificates for TLS server verifications
+  #ssl.certificate_authorities: ["/etc/pki/root/ca.pem"]
+
+  # Certificate for SSL client authentication
+  #ssl.certificate: "/etc/pki/client/cert.pem"
+
+  # Client Certificate Key
+  #ssl.key: "/etc/pki/client/cert.key"
+
+  # Username to use when connecting to MongoDB. Empty by default.
+  #username: user
+
+  # Password to use when connecting to MongoDB. Empty by default.
+  #password: pass
+# Module: munin
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-munin.html
+
+- module: munin
+  #metricsets:
+  #  - node
+  period: 10s
+  hosts: ["localhost:4949"]
+  node.namespace: node
+# Module: mysql
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-mysql.html
+
+- module: mysql
+  #metricsets:
+  #  - status
+  #  - galera_status
+  period: 10s
+
+  # Host DSN should be defined as "user:pass@tcp(127.0.0.1:3306)/"
+  # The username and password can either be set in the DSN or using the username
+  # and password config options. Those specified in the DSN take precedence.
+  hosts: ["root:secret@tcp(127.0.0.1:3306)/"]
+
+  # Username of hosts. Empty by default.
+  #username: root
+
+  # Password of hosts. Empty by default.
+  #password: secret
+# Module: nginx
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-nginx.html
+
+- module: nginx
+  #metricsets:
+  #  - stubstatus
+  period: 10s
+
+  # Nginx hosts
+  hosts: ["http://127.0.0.1"]
+
+  # Path to server status. Default server-status
+  #server_status_path: "server-status"
+
+  #username: "user"
+  #password: "secret"
+# Module: php_fpm
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-php_fpm.html
+
+- module: php_fpm
+  #metricsets:
+  #  - pool
+  #  - process
+  period: 10s
+  hosts: ["localhost:8080"]
+  status_path: "/status"
+  #username: "user"
+  #password: "secret"
+# Module: postgresql
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-postgresql.html
+
+- module: postgresql
+  #metricsets:
+  #  - database
+  #  - bgwriter
+  #  - activity
+  period: 10s
+  hosts: ["postgres://localhost:5432"]
+  #username: user
+  #password: pass
+# Module: prometheus
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-prometheus.html
+
+- module: prometheus
+  #metricsets:
+  #  - stats
+  period: 10s
+  hosts: ["localhost:9090"]
+  metrics_path: /metrics
+  #namespace: example
+  #username: "user"
+  #password: "secret"
+
+  # This can be used for service account based authorization:
+  #  bearer_token_file: /var/run/secrets/kubernetes.io/serviceaccount/token
+  #ssl.certificate_authorities:
+  #  - /var/run/secrets/kubernetes.io/serviceaccount/service-ca.crt
+# Module: rabbitmq
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-rabbitmq.html
+
+- module: rabbitmq
+  #metricsets:
+  #  - node
+  #  - queue
+  #  - connection
+  period: 10s
+  hosts: ["localhost:15672"]
+  #username: guest
+  #password: guest
+# Module: redis
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-redis.html
+
+- module: redis
+  #metricsets:
+  #  - info
+  #  - keyspace
+  period: 10s
+
+  # Redis hosts
+  hosts: ["127.0.0.1:6379"]
+
+  # Network type to be used for redis connection. Default: tcp
+  #network: tcp
+
+  # Max number of concurrent connections. Default: 10
+  #maxconn: 10
+
+  # Redis AUTH password. Empty by default.
+  #password: foobared
+# Module: system
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-system.html
+
+- module: system
+  period: 10s
+  metricsets:
+    - cpu
+    - load
+    - memory
+    - network
+    - process
+    - process_summary
+    #- core
+    #- diskio
+    #- socket
+  process.include_top_n:
+    by_cpu: 5      # include top 5 processes by CPU
+    by_memory: 5   # include top 5 processes by memory
+
+- module: system
+  period: 1m
+  metricsets:
+    - filesystem
+    - fsstat
+  processors:
+  - drop_event.when.regexp:
+      system.filesystem.mount_point: '^/(sys|cgroup|proc|dev|etc|host|lib)($|/)'
+
+- module: system
+  period: 15m
+  metricsets:
+    - uptime
+
+#- module: system
+#  period: 5m
+#  metricsets:
+#    - raid
+#  raid.mount_point: '/'
+# Module: traefik
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-traefik.html
+
+- module: traefik
+  metricsets: ["health"]
+  period: 10s
+  hosts: ["localhost:8080"]
+# Module: uwsgi
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-uwsgi.html
+
+- module: uwsgi
+  #metricsets:
+  #  - status
+  period: 10s
+  hosts: ["tcp://127.0.0.1:9191"]
+# Module: vsphere
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-vsphere.html
+
+- module: vsphere
+  #metricsets:
+  #  - datastore
+  #  - host
+  #  - virtualmachine
+  period: 10s
+  hosts: ["https://localhost/sdk"]
+
+  username: "user"
+  password: "password"
+  # If insecure is true, don't verify the server's certificate chain
+  insecure: false
+  # Get custom fields when using virtualmachine metric set. Default false.
+  # get_custom_fields: false
+# Module: windows
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-windows.html
+
+- module: windows
+  #metricsets:
+  #  - service
+  period: 1m
+
+#- module: windows
+#  metricsets:
+#    - perfmon
+#  period: 10s
+#  perfmon.counters:
+#    - instance_label: processor.name
+#      instance_name: total
+#      measurement_label: processor.time.total.pct
+#      query: '\Processor Information(_Total)\% Processor Time'
+#
+#    - instance_label: physical_disk.name
+#      measurement_label: physical_disk.write.per_sec
+#      query: '\PhysicalDisk(*)\Disk Writes/sec'
+#
+#    - instance_label: physical_disk.name
+#      measurement_label: physical_disk.write.time.pct
+#      query: '\PhysicalDisk(*)\% Disk Write Time'
+# Module: zookeeper
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-zookeeper.html
+
+- module: zookeeper
+  #metricsets:
+  #  - mntr
+  period: 10s
+  hosts: ["localhost:2181"]
+# Module: aerospike
+# Docs: https://www.elastic.co/guide/en/beats/metricbeat/master/metricbeat-module-aerospike.html
+
+- module: aerospike
+  #metricsets:
+  #  - namespace
+  period: 10s
+  hosts: ["localhost:3000"]
