@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/elasticsearchservice/pom.xml" line="97" mnemonic="3" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3370bf2f-265c-4517-8132-15078af15822" name="Default" comment="" />
+    <list default="true" id="3370bf2f-265c-4517-8132-15078af15822" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elasticsearchservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/elasticsearchservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flinkservice/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flinkservice/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flinkservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flinkservice/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/web/target/" />
@@ -17,60 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/util/GrokSplitter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="14" column="78" selection-start-line="14" selection-start-column="78" selection-end-line="14" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/GsonBuilder.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4125">
-              <caret line="168" column="23" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elasticsearchservice/src/main/java/com/cad/elasticsearchservice/Service/ESService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="578" column="53" lean-forward="true" selection-start-line="578" selection-start-column="53" selection-end-line="578" selection-end-column="53" />
-              <folding>
-                <element signature="method#getIndex#0;class#ESService#0" />
-                <element signature="method#createIndex#0;class#ESService#0" />
-                <element signature="method#buildSetting#0;class#ESService#0" />
-                <element signature="method#buildDefaultIndexMapping#0;class#ESService#0" />
-                <element signature="docComment;method#deleteIndex#0;class#ESService#0" />
-                <element signature="method#deleteIndex#0;class#ESService#0" />
-                <element signature="docComment;method#deleteData#0;class#ESService#0" />
-                <element signature="method#deleteData#0;class#ESService#0" />
-                <element signature="docComment;method#getIndexBaseInfo#0;class#ESService#0" />
-                <element signature="method#getIndexBaseInfo#0;class#ESService#0" />
-                <element signature="docComment;method#getNodeDetails#0;class#ESService#0" />
-                <element signature="method#getNodeDetails#0;class#ESService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entity/src/main/java/com/cad/entity/domain/SuperLine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cad/web/controller/LogController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,13 +62,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cad/web/service/AlarmService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="159" column="50" lean-forward="true" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
+            <state relative-caret-position="213">
+              <caret line="157" column="24" lean-forward="true" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/collectionservice/src/main/java/com/cad/collectionservice/domain/Agent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elasticsearchservice/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flinkservice/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flinkservice/dependency-reduced-pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="156" column="36" lean-forward="true" selection-start-line="156" selection-start-column="36" selection-end-line="156" selection-end-column="36" />
+              <folding>
+                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
+                <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -132,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>NULL</find>
       <find>&quot;on&quot;</find>
       <find>getCollctionsStatus</find>
       <find>909</find>
@@ -162,6 +165,7 @@
       <find>todo</find>
       <find>datehi</find>
       <find>10000</find>
+      <find>fastjson</find>
     </findStrings>
     <replaceStrings>
       <replace>filebeat</replace>
@@ -171,11 +175,12 @@
       <replace />
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/metricmodules.yml" />
-        <option value="$PROJECT_DIR$/entity/src/main/java/com/cad/entity/leetcode/BlackRedBoll.java" />
         <option value="$PROJECT_DIR$/entity/src/main/java/com/cad/entity/leetcode/Main.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/controller/AgentController.java" />
         <option value="$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/wikiedits/MyWindowWordCount.java" />
@@ -192,7 +197,6 @@
         <option value="$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/util/ConversionSplitter.java" />
         <option value="$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/ReceiveData.java" />
         <option value="$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/service/ProcessService.java" />
-        <option value="$PROJECT_DIR$/flinkservice/pom.xml" />
         <option value="$PROJECT_DIR$/flinkservice/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/controller/FlinkController.java" />
         <option value="$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/util/IpToAddress.java" />
@@ -211,7 +215,6 @@
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/controller/GeneralViewController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/service/GeneralViewService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/util/SendEmail.java" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
         <option value="$PROJECT_DIR$/entity/src/main/java/com/cad/entity/domain/DateMetricParaConfig.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/util/ScheduledService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/controller/AlarmController.java" />
@@ -225,6 +228,10 @@
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/controller/ProcessorController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/controller/LogController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/cad/web/service/AlarmService.java" />
+        <option value="$PROJECT_DIR$/elasticsearchservice/pom.xml" />
+        <option value="$PROJECT_DIR$/flinkservice/pom.xml" />
+        <option value="$PROJECT_DIR$/web/pom.xml" />
+        <option value="$PROJECT_DIR$/flinkservice/dependency-reduced-pom.xml" />
       </list>
     </option>
   </component>
@@ -260,12 +267,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="82" />
     <option name="y" value="-13" />
     <option name="width" value="1750" />
     <option name="height" value="984" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -651,8 +659,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -665,7 +673,7 @@
     <property name="SearchEverywhereHistoryKey" value="manage2&#9;FILE&#9;jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/sun/awt/shell/Win32ShellFolderManager2.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576001068518" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576488107271" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1013,6 +1021,7 @@
       <workItem from="1575785226751" duration="4825000" />
       <workItem from="1575804639896" duration="19990000" />
       <workItem from="1575993100768" duration="1161000" />
+      <workItem from="1576487226272" duration="881000" />
     </task>
     <servers />
   </component>
@@ -1034,7 +1043,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="924637000" />
+    <option name="totallyTimeSpent" value="925518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1047,8 +1056,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20095949" />
       <window_info id="Structure" order="1" weight="0.15426695" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1067,12 +1077,12 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.29577464" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.30010834" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3217768" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="File Transfer" order="15" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.33152762" />
+      <window_info anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.33152762" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24978012" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1273,45 +1283,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/Email.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/wikiedits/GrokTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/ReceiveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/thekraken/grok/0.1.5/grok-0.1.5-sources.jar!/io/thekraken/grok/api/Grok.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9750">
-          <caret line="434" column="29" selection-start-line="434" selection-start-column="29" selection-end-line="434" selection-end-column="29" />
-          <folding>
-            <element signature="e#12700#12701#0" expanded="true" />
-            <element signature="e#12737#12738#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar!/org/apache/commons/lang3/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42875">
-          <caret line="1776" column="25" selection-start-line="1776" selection-start-column="25" selection-end-line="1776" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elasticsearchservice/src/main/java/com/cad/elasticsearchservice/Dao/ElasticsearchRestClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1585,6 +1556,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cad/web/WebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/flinkservice/src/main/java/com/cad/flinkservice/util/GrokSplitter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1596,6 +1578,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4125">
           <caret line="168" column="23" selection-start-line="168" selection-start-column="23" selection-end-line="168" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elasticsearchservice/src/main/java/com/cad/elasticsearchservice/Service/ESService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10475">
+          <caret line="578" column="53" selection-start-line="578" selection-start-column="53" selection-end-line="578" selection-end-column="53" />
+          <folding>
+            <element signature="method#getIndex#0;class#ESService#0" />
+            <element signature="method#createIndex#0;class#ESService#0" />
+            <element signature="method#buildSetting#0;class#ESService#0" />
+            <element signature="method#buildDefaultIndexMapping#0;class#ESService#0" />
+            <element signature="docComment;method#deleteIndex#0;class#ESService#0" />
+            <element signature="method#deleteIndex#0;class#ESService#0" />
+            <element signature="docComment;method#deleteData#0;class#ESService#0" />
+            <element signature="method#deleteData#0;class#ESService#0" />
+            <element signature="docComment;method#getIndexBaseInfo#0;class#ESService#0" />
+            <element signature="method#getIndexBaseInfo#0;class#ESService#0" />
+            <element signature="docComment;method#getNodeDetails#0;class#ESService#0" />
+            <element signature="method#getNodeDetails#0;class#ESService#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1638,44 +1641,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elasticsearchservice/src/main/java/com/cad/elasticsearchservice/Service/ESService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="578" column="53" lean-forward="true" selection-start-line="578" selection-start-column="53" selection-end-line="578" selection-end-column="53" />
-          <folding>
-            <element signature="method#getIndex#0;class#ESService#0" />
-            <element signature="method#createIndex#0;class#ESService#0" />
-            <element signature="method#buildSetting#0;class#ESService#0" />
-            <element signature="method#buildDefaultIndexMapping#0;class#ESService#0" />
-            <element signature="docComment;method#deleteIndex#0;class#ESService#0" />
-            <element signature="method#deleteIndex#0;class#ESService#0" />
-            <element signature="docComment;method#deleteData#0;class#ESService#0" />
-            <element signature="method#deleteData#0;class#ESService#0" />
-            <element signature="docComment;method#getIndexBaseInfo#0;class#ESService#0" />
-            <element signature="method#getIndexBaseInfo#0;class#ESService#0" />
-            <element signature="docComment;method#getNodeDetails#0;class#ESService#0" />
-            <element signature="method#getNodeDetails#0;class#ESService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cad/web/WebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/cad/web/service/AlarmService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="159" column="50" lean-forward="true" selection-start-line="159" selection-start-column="50" selection-end-line="159" selection-end-column="50" />
+        <state relative-caret-position="213">
+          <caret line="157" column="24" lean-forward="true" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collectionservice/src/main/java/com/cad/collectionservice/domain/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elasticsearchservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flinkservice/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="61" column="21" lean-forward="true" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flinkservice/dependency-reduced-pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="156" column="36" lean-forward="true" selection-start-line="156" selection-start-column="36" selection-end-line="156" selection-end-column="36" />
+          <folding>
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" />
           </folding>
         </state>
       </provider>
