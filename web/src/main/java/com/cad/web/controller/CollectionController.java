@@ -485,10 +485,10 @@ public class CollectionController {
 
         InputObject.put("paths",pathsArray);
 
-        if (multilineObject != null){
+        if (multilineObject != null && multilineObject.size()>=1){
             InputObject.put("multiline",multilineObject);
         }
-        if (fieldsObject != null){
+        if (fieldsObject != null && fieldsObject.size()>=1){
             InputObject.put("fields",fieldsObject);
         }
         result.setResultData(InputObject);
