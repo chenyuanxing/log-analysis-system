@@ -37,11 +37,11 @@ public class ElasticsearchSinkFunctionWithConf<T> implements ElasticsearchSinkFu
 //        Map<String,Object> map = new HashMap<>();
 //        String e = String.valueOf(element);
 //        map = new com.google.gson.Gson().fromJson(String.valueOf(element),map.getClass());
-
+        Map<String,Object> map = (Map<String,Object>)element;
         return Requests.indexRequest()
                 .index(indexName)
                 .type(typeName)
-                .source(element);
+                .source(map);
 
     }
 }
